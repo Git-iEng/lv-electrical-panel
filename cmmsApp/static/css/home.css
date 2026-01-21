@@ -48,7 +48,7 @@ section[id] {
   align-items: center;
 }
 
-.hero-left-solar-system {}
+
 
 .hero-right-solar-system {
   justify-self: end;
@@ -585,7 +585,7 @@ body {
 
 .grid-lv-electrical-about- {
   display: grid;
-  grid-template-columns: 1.05fr 1fr .6fr;
+  grid-template-columns: .4fr .6fr ;
   gap: clamp(16px, 3.8vw, 42px);
   align-items: center;
 }
