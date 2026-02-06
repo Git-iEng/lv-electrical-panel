@@ -165,9 +165,6 @@ def home(request):
 def request_demo(request):
     return render(request, "request_demo_modal.html")
 
-
-
-
 def contact(request):     return render(request, "contact.html")
 
 

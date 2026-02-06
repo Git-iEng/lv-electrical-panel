@@ -4,8 +4,7 @@ from . import views
 
 app_name = 'cmmsApp'
 
-from django.views.static import serve
-from django.conf import settings
+
 urlpatterns = [
      # Home
     path("", views.home, name="home"),

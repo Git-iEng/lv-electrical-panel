@@ -1,5 +1,5 @@
 /* ==========================================================
-   landing-page-solar-system.js
+   landing-page-lv-electrical-panel.js
    - Scroll reveal (replays on scroll up/down)
    - Optional: adjust initial hash scroll for fixed header
    - Optional: smooth scroll for [data-scroll-to] anchors
@@ -7,8 +7,8 @@
 
 /* ===== CONFIG ===== */
 const SOLAR = {
-  revealSelector: '.reveal-solar-system',
-  inViewClass: 'in-view-solar-system',
+  revealSelector: '.reveal-lv-electrical-panel',
+  inViewClass: 'in-view-lv-electrical-panel',
   headerSelector: '.header',
   anchorSelector: '[data-scroll-to]'
 };
@@ -80,18 +80,18 @@ function smoothScrollTo(targetSelector) {
    Logos pager (dots) + continuous marquee coexist (robust)
    ========================================================== */
 (function initLogosPager() {
-  const wrap = document.querySelector('.logos-wrap-solar-system');
-  const track = document.getElementById('logos-track-solar-system');
-  const dotsWrap = document.getElementById('dots-solar-system');
+  const wrap = document.querySelector('.logos-wrap-lv-electrical-panel');
+  const track = document.getElementById('logos-track-lv-electrical-panel');
+  const dotsWrap = document.getElementById('dots-lv-electrical-panel');
   if (!wrap || !track || !dotsWrap) return;
 
-  const dots = Array.from(dotsWrap.querySelectorAll('.dot-solar-system'));
+  const dots = Array.from(dotsWrap.querySelectorAll('.dot-lv-electrical-panel'));
   const RESUME_DELAY = 3500; // ms after click before continuous scroll resumes
   let resumeTimer = null;
 
   // set active dot helper
   function setActiveDot(idx) {
-    dots.forEach((d, i) => d.classList.toggle('is-active-solar-system', i === idx));
+    dots.forEach((d, i) => d.classList.toggle('is-active-lv-electrical-panel', i === idx));
   }
   setActiveDot(0);
 
@@ -100,7 +100,7 @@ function smoothScrollTo(targetSelector) {
 
   // Fully disable CSS animation and let us control transform
   function enterManualMode() {
-    track.classList.add('manual-solar-system');
+    track.classList.add('manual-lv-electrical-panel');
     track.style.animationPlayState = 'paused';
   }
 
@@ -108,7 +108,7 @@ function smoothScrollTo(targetSelector) {
   function resumeContinuous() {
     // remove manual transform + class and restart animation cleanly
     track.style.transform = '';
-    track.classList.remove('manual-solar-system');
+    track.classList.remove('manual-lv-electrical-panel');
 
     // Restart the CSS animation reliably (toggle to 'none' then back)
     const prevAnim = getComputedStyle(track).animation;
@@ -146,8 +146,8 @@ function smoothScrollTo(targetSelector) {
 
   // Maintain the same page on resize while paused
   const ro = new ResizeObserver(() => {
-    const active = dots.findIndex(el => el.classList.contains('is-active-solar-system'));
-    if (active > -1 && track.classList.contains('manual-solar-system')) {
+    const active = dots.findIndex(el => el.classList.contains('is-active-lv-electrical-panel'));
+    if (active > -1 && track.classList.contains('manual-lv-electrical-panel')) {
       track.style.transform = `translateX(${-active * pageWidth()}px)`;
     }
   });
@@ -155,12 +155,12 @@ function smoothScrollTo(targetSelector) {
 
   // Also pause marquee on hover (optional, keeps prior UX)
   wrap.addEventListener('mouseenter', () => {
-    if (!track.classList.contains('manual-solar-system')) {
+    if (!track.classList.contains('manual-lv-electrical-panel')) {
       track.style.animationPlayState = 'paused';
     }
   });
   wrap.addEventListener('mouseleave', () => {
-    if (!track.classList.contains('manual-solar-system')) {
+    if (!track.classList.contains('manual-lv-electrical-panel')) {
       track.style.animationPlayState = 'running';
     }
   });
@@ -171,7 +171,7 @@ function smoothScrollTo(targetSelector) {
    Count-up animation for Impact stats
    ========================================================== */
 (function initImpactCounters() {
-  const items = document.querySelectorAll('.stat-value-solar-system-impact');
+  const items = document.querySelectorAll('.stat-value-lv-electrical-panel-impact');
   if (!items.length) return;
 
   function countTo(el) {
@@ -220,12 +220,12 @@ function smoothScrollTo(targetSelector) {
    Solutions: "View All Solutions" toggle
    ========================================================== */
 (function initSolutionsToggle() {
-  const grid = document.getElementById('solutions-grid-solar-system-solution');
-  const btn = document.getElementById('solutions-toggle-btn-solar-system-solution');
+  const grid = document.getElementById('solutions-grid-lv-electrical-panel-solution');
+  const btn = document.getElementById('solutions-toggle-btn-lv-electrical-panel-solution');
   if (!grid || !btn) return;
 
   function setState(expanded) {
-    grid.classList.toggle('is-collapsed-solar-system-solution', !expanded);
+    grid.classList.toggle('is-collapsed-lv-electrical-panel-solution', !expanded);
     btn.setAttribute('aria-expanded', String(expanded));
     btn.textContent = expanded ? 'View Fewer' : 'View LV Switchboards ';
 
@@ -287,9 +287,9 @@ function smoothScrollTo(targetSelector) {
    Projects carousel: arrows scroll by one full "page"
    ========================================================== */
 (function initProjectsCarousel() {
-  const viewport = document.getElementById('projects-viewport-solar-system-projects');
-  const prevBtn = document.querySelector('.prev-solar-system-projects');
-  const nextBtn = document.querySelector('.next-solar-system-projects');
+  const viewport = document.getElementById('projects-viewport-lv-electrical-panel-projects');
+  const prevBtn = document.querySelector('.prev-lv-electrical-panel-projects');
+  const nextBtn = document.querySelector('.next-lv-electrical-panel-projects');
   if (!viewport || !prevBtn || !nextBtn) return;
 
   function updateButtons() {
@@ -326,11 +326,11 @@ function smoothScrollTo(targetSelector) {
    Types tabs: click/keyboard + hash support
    ========================================================== */
 (function initSolarTypes() {
-  const tabs = Array.from(document.querySelectorAll('.tab-btn-solar-system-types'));
+  const tabs = Array.from(document.querySelectorAll('.tab-btn-lv-electrical-panel-types'));
   const panels = {
-    'on-grid': document.getElementById('panel-on-grid-solar-system-types'),
-    'off-grid': document.getElementById('panel-off-grid-solar-system-types'),
-    'hybrid': document.getElementById('panel-hybrid-solar-system-types')
+    'on-grid': document.getElementById('panel-on-grid-lv-electrical-panel-types'),
+    'off-grid': document.getElementById('panel-off-grid-lv-electrical-panel-types'),
+    'hybrid': document.getElementById('panel-hybrid-lv-electrical-panel-types')
   };
   if (!tabs.length) return;
 
@@ -338,7 +338,7 @@ function smoothScrollTo(targetSelector) {
     // tabs
     tabs.forEach(btn => {
       const isActive = btn.dataset.type === type;
-      btn.classList.toggle('is-active-solar-system-types', isActive);
+      btn.classList.toggle('is-active-lv-electrical-panel-types', isActive);
       btn.setAttribute('aria-selected', String(isActive));
       // tabindex for roving focus
       btn.setAttribute('tabindex', isActive ? '0' : '-1');
@@ -347,7 +347,7 @@ function smoothScrollTo(targetSelector) {
     Object.entries(panels).forEach(([key, el]) => {
       const show = key === type;
       if (!el) return;
-      el.classList.toggle('is-active-solar-system-types', show);
+      el.classList.toggle('is-active-lv-electrical-panel-types', show);
       el.hidden = !show;
       if (show) {
         // restart small fade-in animation
@@ -360,8 +360,8 @@ function smoothScrollTo(targetSelector) {
   tabs.forEach(btn => btn.addEventListener('click', () => activate(btn.dataset.type)));
 
   // Keyboard: left/right arrows
-  document.querySelector('.tabs-solar-system-types')?.addEventListener('keydown', (e) => {
-    const idx = tabs.findIndex(b => b.classList.contains('is-active-solar-system-types'));
+  document.querySelector('.tabs-lv-electrical-panel-types')?.addEventListener('keydown', (e) => {
+    const idx = tabs.findIndex(b => b.classList.contains('is-active-lv-electrical-panel-types'));
     if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
       e.preventDefault();
       const dir = e.key === 'ArrowRight' ? 1 : -1;
@@ -383,23 +383,23 @@ function smoothScrollTo(targetSelector) {
   fromHash();
 })();
 /* ==========================================================
-   Scoped tabs for all .section-types-solar-system-types
+   Scoped tabs for all .section-types-lv-electrical-panel-types
    (no global getElementById; supports multiple instances)
    ========================================================== */
 (function initAllSolarTypeTabs() {
-  document.querySelectorAll('.section-types-solar-system-types').forEach(section => {
-    const tabsWrap = section.querySelector('.tabs-solar-system-types');
+  document.querySelectorAll('.section-types-lv-electrical-panel-types').forEach(section => {
+    const tabsWrap = section.querySelector('.tabs-lv-electrical-panel-types');
     if (!tabsWrap) return;
 
-    const tabs = Array.from(section.querySelectorAll('.tab-btn-solar-system-types'));
-    const panels = Array.from(section.querySelectorAll('.panel-solar-system-types'));
+    const tabs = Array.from(section.querySelectorAll('.tab-btn-lv-electrical-panel-types'));
+    const panels = Array.from(section.querySelectorAll('.panel-lv-electrical-panel-types'));
     if (!tabs.length || !panels.length) return;
 
     function activate(btn) {
       // Tabs state
       tabs.forEach(t => {
         const isActive = t === btn;
-        t.classList.toggle('is-active-solar-system-types', isActive);
+        t.classList.toggle('is-active-lv-electrical-panel-types', isActive);
         t.setAttribute('aria-selected', String(isActive));
         t.setAttribute('tabindex', isActive ? '0' : '-1');
       });
@@ -409,7 +409,7 @@ function smoothScrollTo(targetSelector) {
       panels.forEach(p => {
         const show = p.id === targetId;
         p.hidden = !show;
-        p.classList.toggle('is-active-solar-system-types', show);
+        p.classList.toggle('is-active-lv-electrical-panel-types', show);
         if (show) { p.style.animation = 'none'; p.offsetHeight; p.style.animation = ''; }
       });
     }
@@ -421,7 +421,7 @@ function smoothScrollTo(targetSelector) {
     tabsWrap.addEventListener('keydown', (e) => {
       if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
       e.preventDefault();
-      const current = tabs.findIndex(t => t.classList.contains('is-active-solar-system-types'));
+      const current = tabs.findIndex(t => t.classList.contains('is-active-lv-electrical-panel-types'));
       const dir = e.key === 'ArrowRight' ? 1 : -1;
       const next = (current + dir + tabs.length) % tabs.length;
       tabs[next].focus();
@@ -429,7 +429,7 @@ function smoothScrollTo(targetSelector) {
     });
 
     // Init: use the one marked active or the first
-    activate(tabs.find(t => t.classList.contains('is-active-solar-system-types')) || tabs[0]);
+    activate(tabs.find(t => t.classList.contains('is-active-lv-electrical-panel-types')) || tabs[0]);
   });
 })();
 
@@ -1109,7 +1109,7 @@ metering: {
 (() => {
   const modal = document.getElementById('csc-modal');
   const form  = document.getElementById('csc-form');
-  const close = modal.querySelector('.modal-close-csc-solar-system-csc-products');
+  const close = modal.querySelector('.modal-close-csc-lv-electrical-panel-csc-products');
   const successPane  = document.getElementById('csc-success');
   const docNameInput = document.getElementById('csc-doc-name');
 
@@ -1127,7 +1127,7 @@ metering: {
   }
 
   // Open from each "Request Download" button
-  document.querySelectorAll('.request-download-csc-solar-system-csc-products').forEach(btn => {
+  document.querySelectorAll('.request-download-csc-lv-electrical-panel-csc-products').forEach(btn => {
     btn.addEventListener('click', () => {
       docNameInput.value = btn.dataset.doc || '';
       openModal();
@@ -1136,7 +1136,7 @@ metering: {
 
   // Close handlers
   close.addEventListener('click', closeModal);
-  modal.querySelector('.modal-backdrop-csc-solar-system-csc-products')
+  modal.querySelector('.modal-backdrop-csc-lv-electrical-panel-csc-products')
        .addEventListener('click', closeModal);
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 })();

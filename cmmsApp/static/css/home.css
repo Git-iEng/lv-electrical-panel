@@ -29,19 +29,19 @@ section[id] {
 }
 
 /* ============= BASE LAYOUT ============= */
-.container-solar-system {
+.container-lv-electrical-panel {
   width: min(92vw, var(--container-w-solar));
   margin-inline: auto;
 }
 
-.section-hero-solar-system {
+.section-hero-lv-electrical-panel {
   position: relative;
   background: white;
   padding-top: 3vw;
   padding: clamp(48px, .2vw, 80px) 0 0;
 }
 
-.grid-hero-solar-system {
+.grid-hero-lv-electrical-panel {
   display: grid;
   grid-template-columns: 1.1fr .9fr;
   gap: clamp(24px, 4vw, 48px);
@@ -50,11 +50,11 @@ section[id] {
 
 
 
-.hero-right-solar-system {
+.hero-right-lv-electrical-panel {
   justify-self: end;
 }
 
-.hero-title-solar-system {
+.hero-title-lv-electrical-panel {
   font-size: clamp(32px, 5vw, 56px);
   line-height: 1.05;
   letter-spacing: .2px;
@@ -63,23 +63,23 @@ section[id] {
   font-weight: 800;
 }
 
-.accent-solar-system {
+.accent-lv-electrical-panel {
   color: var(--teal-700-solar);
 }
 
-.hero-sub-solar-system {
+.hero-sub-lv-electrical-panel {
   color: var(--muted-solar);
   margin: 0 0 26px;
   font-size: clamp(15px, 1.8vw, 18px);
 }
 
-.hero-cta-solar-system {
+.hero-cta-lv-electrical-panel {
   display: flex;
   gap: 12px;
 }
 
-.btn-primary-solar-system,
-.btn-ghost-solar-system {
+.btn-primary-lv-electrical-panel,
+.btn-ghost-lv-electrical-panel {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -91,28 +91,28 @@ section[id] {
   transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease, color .2s ease, border-color .2s ease;
 }
 
-.btn-primary-solar-system {
+.btn-primary-lv-electrical-panel {
   background: linear-gradient(135deg, var(--teal-700-solar), var(--cyan-800-solar));
   color: var(--white-solar);
   box-shadow: var(--shadow-soft-solar);
 }
 
-.btn-primary-solar-system:hover {
+.btn-primary-lv-electrical-panel:hover {
   transform: translateY(-2px);
 }
 
-.btn-ghost-solar-system {
+.btn-ghost-lv-electrical-panel {
   background: transparent;
   border-color: var(--cyan-800-solar);
   color: var(--cyan-800-solar);
 }
 
-.btn-ghost-solar-system:hover {
+.btn-ghost-lv-electrical-panel:hover {
   background: var(--cyan-800-solar);
   color: var(--white-solar);
 }
 
-.hero-img-solar-system {
+.hero-img-lv-electrical-panel {
   width: min(520px, 40vw);
   aspect-ratio: 4 / 5;
   object-fit: cover;
@@ -121,7 +121,7 @@ section[id] {
   display: block;
 }
 
-.hero-band-solar-system {
+.hero-band-lv-electrical-panel {
   display: none;
   position: absolute;
   left: 50%;
@@ -136,14 +136,14 @@ section[id] {
   z-index: 0;
 }
 
-.hero-right-solar-system,
-.hero-left-solar-system {
+.hero-right-lv-electrical-panel,
+.hero-left-lv-electrical-panel {
   position: relative;
   z-index: 1;
 }
 
 /* Trusted section */
-.section-trusted-solar-system {
+.section-trusted-lv-electrical-panel {
   background: #0f1b2a;
   /* deep slate like your screenshot */
   color: #fff;
@@ -151,7 +151,7 @@ section[id] {
   margin-top: clamp(28px, 6vw, 60px);
 }
 
-.trusted-heading-solar-system {
+.trusted-heading-lv-electrical-panel {
   text-align: center;
   font-size: clamp(18px, 2.2vw, 24px);
   font-weight: 800;
@@ -160,7 +160,7 @@ section[id] {
 }
 
 /* Logo carousel */
-.logos-wrap-solar-system {
+.logos-wrap-lv-electrical-panel {
   overflow: hidden;
   position: relative;
   padding: 6px 0;
@@ -170,20 +170,20 @@ section[id] {
   border-radius: 0;
 }
 
-.logos-track-solar-system {
+.logos-track-lv-electrical-panel {
   display: inline-flex;
   align-items: center;
   gap: clamp(28px, 4vw, 46px);
   padding-inline: 12px;
-  animation: marquee-solar-system 28s linear infinite;
+  animation: marquee-lv-electrical-panel 28s linear infinite;
   will-change: transform;
 }
 
-.logos-wrap-solar-system:hover .logos-track-solar-system {
+.logos-wrap-lv-electrical-panel:hover .logos-track-lv-electrical-panel {
   animation-play-state: paused;
 }
 
-.logo-item-solar-system {
+.logo-item-lv-electrical-panel {
   height: clamp(22px, 3.2vw, 34px);
   width: auto;
   opacity: .9;
@@ -191,12 +191,12 @@ section[id] {
   transition: opacity .2s ease, transform .2s ease;
 }
 
-.logo-item-solar-system:hover {
+.logo-item-lv-electrical-panel:hover {
   opacity: 1;
   transform: translateY(-2px);
 }
 
-@keyframes marquee-solar-system {
+@keyframes marquee-lv-electrical-panel {
   from {
     transform: translateX(0);
   }
@@ -209,14 +209,14 @@ section[id] {
 
 
 /* --- DOTS (pagination) --- */
-.dots-solar-system {
+.dots-lv-electrical-panel {
   display: flex;
   justify-content: center;
   gap: 8px;
   margin-top: clamp(10px, 2vw, 14px);
 }
 
-.dot-solar-system {
+.dot-lv-electrical-panel {
   width: 6px;
   height: 6px;
   background: rgba(255, 255, 255, .35);
@@ -225,32 +225,32 @@ section[id] {
   transition: transform .15s ease, background .2s ease;
 }
 
-.dot-solar-system.is-active-solar-system {
+.dot-lv-electrical-panel.is-active-lv-electrical-panel {
   background: rgba(255, 255, 255, .85);
   transform: scale(1.15);
 }
 
 /* ============= SCROLL REVEAL ============= */
-.reveal-solar-system {
+.reveal-lv-electrical-panel {
   opacity: 0;
   transform: translateY(28px) scale(.98);
   transition: opacity .7s cubic-bezier(.2, .65, .2, 1),
     transform .7s cubic-bezier(.2, .65, .2, 1);
 }
 
-.in-view-solar-system {
+.in-view-lv-electrical-panel {
   opacity: 1 !important;
   transform: translateY(0) scale(1) !important;
 }
 
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  .logos-track-solar-system {
+  .logos-track-lv-electrical-panel {
     animation: none;
   }
 
-  .reveal-solar-system,
-  .in-view-solar-system {
+  .reveal-lv-electrical-panel,
+  .in-view-lv-electrical-panel {
     transition: none;
     transform: none;
     opacity: 1;
@@ -259,21 +259,21 @@ section[id] {
 
 /* ============= RESPONSIVE ============= */
 @media (max-width: 960px) {
-  .grid-hero-solar-system {
+  .grid-hero-lv-electrical-panel {
     grid-template-columns: 1fr;
   }
 
-  .hero-right-solar-system {
+  .hero-right-lv-electrical-panel {
     justify-self: start;
   }
 
-  .hero-img-solar-system,
-  .hero-band-solar-system {
+  .hero-img-lv-electrical-panel,
+  .hero-band-lv-electrical-panel {
     width: 100%;
     max-width: 520px;
   }
 
-  .hero-band-solar-system {
+  .hero-band-lv-electrical-panel {
     left: 0;
     transform: none;
   }
@@ -281,22 +281,22 @@ section[id] {
 
 /* --- RESPONSIVE polish --- */
 @media (max-width: 960px) {
-  .grid-hero-solar-system {
+  .grid-hero-lv-electrical-panel {
     grid-template-columns: 1fr;
   }
 
-  .hero-img-solar-system {
+  .hero-img-lv-electrical-panel {
     width: 100%;
     max-width: 520px;
   }
 }
 
 @media (max-width: 560px) {
-  .logos-track-solar-system {
+  .logos-track-lv-electrical-panel {
     gap: 24px;
   }
 
-  .trusted-heading-solar-system {
+  .trusted-heading-lv-electrical-panel {
     font-size: 18px;
   }
 }
@@ -308,16 +308,16 @@ section[id] {
 }
 
 /* Make sure the hero image can layer above the next section */
-.section-hero-solar-system {
+.section-hero-lv-electrical-panel {
   position: relative;
   z-index: 2;
 }
 
-.hero-right-solar-system {
+.hero-right-lv-electrical-panel {
   position: relative;
 }
 
-.hero-img-solar-system {
+.hero-img-lv-electrical-panel {
   position: relative;
   z-index: 3;
   /* sits above the Trusted section */
@@ -327,7 +327,7 @@ section[id] {
 }
 
 /* Remove the old base band if still present */
-.hero-band-solar-system {
+.hero-band-lv-electrical-panel {
   display: none !important;
 }
 
@@ -335,12 +335,12 @@ section[id] {
 @media (min-width: 961px) {
 
   /* Dip the image down */
-  .hero-img-solar-system {
+  .hero-img-lv-electrical-panel {
     transform: translateY(var(--overlap-solar));
   }
 
   /* Pull the Trusted section up so the image overlaps it */
-  .section-trusted-solar-system {
+  .section-trusted-lv-electrical-panel {
     position: relative;
     z-index: 1;
     margin-top: calc(var(--overlap-solar) * -1);
@@ -354,11 +354,11 @@ section[id] {
 
 /* ===== Mobile/Tablet: no overlap (clean stack) ===== */
 @media (max-width: 960px) {
-  .hero-img-solar-system {
+  .hero-img-lv-electrical-panel {
     transform: none;
   }
 
-  .section-trusted-solar-system {
+  .section-trusted-lv-electrical-panel {
     margin-top: clamp(28px, 6vw, 60px);
     /* your normal spacing */
     padding-top: clamp(56px, 8vw, 84px);
@@ -366,7 +366,7 @@ section[id] {
 }
 
 /* Stop marquee while user is paging via dots */
-.logos-track-solar-system.manual-solar-system {
+.logos-track-lv-electrical-panel.manual-lv-electrical-panel {
   animation: none !important;
 }
 
@@ -375,12 +375,12 @@ section[id] {
 /* why us */
 
 /* ====== WHY section: structure ====== */
-.section-why-solar-system-why {
+.section-why-lv-electrical-panel-why {
   background: var(--bg-solar);
   padding: clamp(56px, 8vw, 96px) 0;
 }
 
-.eyebrow-solar-system-why {
+.eyebrow-lv-electrical-panel-why {
   color: var(--teal-700-solar);
   font-weight: 800;
   letter-spacing: .4px;
@@ -388,7 +388,7 @@ section[id] {
   margin: 0 0 8px;
 }
 
-.title-solar-system-why {
+.title-lv-electrical-panel-why {
   text-align: center;
   color: var(--ink-solar);
   font-size: clamp(24px, 4vw, 40px);
@@ -398,7 +398,7 @@ section[id] {
 }
 
 /* Grid with subtle vertical dividers like your screenshot */
-.grid-solar-system-why {
+.grid-lv-electrical-panel-why {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: clamp(18px, 3vw, 28px) clamp(18px, 3vw, 32px);
@@ -406,26 +406,26 @@ section[id] {
 }
 
 /* create column separators */
-.grid-solar-system-why>.card-solar-system-why {
+.grid-lv-electrical-panel-why>.card-lv-electrical-panel-why {
   position: relative;
   padding: clamp(16px, 3vw, 22px);
   background: transparent;
 }
 
-.grid-solar-system-why>.card-solar-system-why:nth-child(1),
-.grid-solar-system-why>.card-solar-system-why:nth-child(2),
-.grid-solar-system-why>.card-solar-system-why:nth-child(4),
-.grid-solar-system-why>.card-solar-system-why:nth-child(5) {
+.grid-lv-electrical-panel-why>.card-lv-electrical-panel-why:nth-child(1),
+.grid-lv-electrical-panel-why>.card-lv-electrical-panel-why:nth-child(2),
+.grid-lv-electrical-panel-why>.card-lv-electrical-panel-why:nth-child(4),
+.grid-lv-electrical-panel-why>.card-lv-electrical-panel-why:nth-child(5) {
   border-right: 1px solid rgba(21, 94, 117, .15);
   /* cyan-800 at low opacity */
 }
 
-.grid-solar-system-why>.card-solar-system-why:nth-child(n+4) {
+.grid-lv-electrical-panel-why>.card-lv-electrical-panel-why:nth-child(n+4) {
   border-top: 1px solid rgba(21, 94, 117, .15);
 }
 
 /* card content */
-.icon-wrap-solar-system-why {
+.icon-wrap-lv-electrical-panel-why {
   width: 44px;
   height: 44px;
   display: inline-flex;
@@ -439,19 +439,19 @@ section[id] {
   flex-shrink: 0;
 }
 
-.icon-wrap-solar-system-why i {
+.icon-wrap-lv-electrical-panel-why i {
   font-size: 22px;
   line-height: 1;
 }
 
-.card-title-solar-system-why {
+.card-title-lv-electrical-panel-why {
   margin: 0 0 6px;
   font-weight: 800;
   color: var(--ink-solar);
   font-size: clamp(16px, 2vw, 18px);
 }
 
-.card-text-solar-system-why {
+.card-text-lv-electrical-panel-why {
   margin: 0;
   color: var(--muted-solar);
   font-size: clamp(14px, 1.9vw, 16px);
@@ -459,13 +459,13 @@ section[id] {
 }
 
 /* ====== Reveal Animations (slow) ======
-   Uses your existing JS: it toggles .in-view-solar-system.
-   Add direction classes ending with -solar-system-why.
+   Uses your existing JS: it toggles .in-view-lv-electrical-panel.
+   Add direction classes ending with -lv-electrical-panel-why.
 */
-.reveal-left-solar-system-why,
-.reveal-right-solar-system-why,
-.reveal-top-solar-system-why,
-.reveal-bottom-solar-system-why {
+.reveal-left-lv-electrical-panel-why,
+.reveal-right-lv-electrical-panel-why,
+.reveal-top-lv-electrical-panel-why,
+.reveal-bottom-lv-electrical-panel-why {
   opacity: 0;
   transform: translate3d(0, 0, 0);
   transition:
@@ -475,27 +475,27 @@ section[id] {
 }
 
 /* initial offsets */
-.reveal-left-solar-system-why {
+.reveal-left-lv-electrical-panel-why {
   transform: translateX(-28px);
 }
 
-.reveal-right-solar-system-why {
+.reveal-right-lv-electrical-panel-why {
   transform: translateX(28px);
 }
 
-.reveal-top-solar-system-why {
+.reveal-top-lv-electrical-panel-why {
   transform: translateY(-28px);
 }
 
-.reveal-bottom-solar-system-why {
+.reveal-bottom-lv-electrical-panel-why {
   transform: translateY(28px);
 }
 
-/* when JS adds .in-view-solar-system to the same element */
-.in-view-solar-system.reveal-left-solar-system-why,
-.in-view-solar-system.reveal-right-solar-system-why,
-.in-view-solar-system.reveal-top-solar-system-why,
-.in-view-solar-system.reveal-bottom-solar-system-why {
+/* when JS adds .in-view-lv-electrical-panel to the same element */
+.in-view-lv-electrical-panel.reveal-left-lv-electrical-panel-why,
+.in-view-lv-electrical-panel.reveal-right-lv-electrical-panel-why,
+.in-view-lv-electrical-panel.reveal-top-lv-electrical-panel-why,
+.in-view-lv-electrical-panel.reveal-bottom-lv-electrical-panel-why {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
@@ -503,10 +503,10 @@ section[id] {
 /* prefer-reduced-motion: show everything without animation */
 @media (prefers-reduced-motion: reduce) {
 
-  .reveal-left-solar-system-why,
-  .reveal-right-solar-system-why,
-  .reveal-top-solar-system-why,
-  .reveal-bottom-solar-system-why {
+  .reveal-left-lv-electrical-panel-why,
+  .reveal-right-lv-electrical-panel-why,
+  .reveal-top-lv-electrical-panel-why,
+  .reveal-bottom-lv-electrical-panel-why {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
@@ -515,31 +515,31 @@ section[id] {
 
 /* ====== Responsive ====== */
 @media (max-width: 992px) {
-  .grid-solar-system-why {
+  .grid-lv-electrical-panel-why {
     grid-template-columns: repeat(2, 1fr);
   }
 
   /* tidy borders for 2-column layout */
-  .grid-solar-system-why>.card-solar-system-why {
+  .grid-lv-electrical-panel-why>.card-lv-electrical-panel-why {
     border-right: none;
     border-top: none;
   }
 
-  .grid-solar-system-why>.card-solar-system-why:nth-child(odd) {
+  .grid-lv-electrical-panel-why>.card-lv-electrical-panel-why:nth-child(odd) {
     border-right: 1px solid rgba(21, 94, 117, .15);
   }
 
-  .grid-solar-system-why>.card-solar-system-why:nth-child(n+3) {
+  .grid-lv-electrical-panel-why>.card-lv-electrical-panel-why:nth-child(n+3) {
     border-top: 1px solid rgba(21, 94, 117, .15);
   }
 }
 
 @media (max-width: 560px) {
-  .grid-solar-system-why {
+  .grid-lv-electrical-panel-why {
     grid-template-columns: 1fr;
   }
 
-  .grid-solar-system-why>.card-solar-system-why {
+  .grid-lv-electrical-panel-why>.card-lv-electrical-panel-why {
     border: none !important;
     padding: 14px 2px;
   }
@@ -1752,7 +1752,7 @@ body {
 }
 
 /* --- MODAL (gated docs) --- */
-.modal-csc-solar-system-csc-products {
+.modal-csc-lv-electrical-panel-csc-products {
   position: fixed;
   /* cover the whole viewport */
   inset: 0;
@@ -1762,11 +1762,11 @@ body {
   /* sit above everything */
 }
 
-.modal-csc-solar-system-csc-products[aria-hidden="false"] {
+.modal-csc-lv-electrical-panel-csc-products[aria-hidden="false"] {
   display: block;
 }
 
-.modal-backdrop-csc-solar-system-csc-products {
+.modal-backdrop-csc-lv-electrical-panel-csc-products {
   position: absolute;
   inset: 0;
   /* dim + blur the entire page behind the modal */
@@ -1777,7 +1777,7 @@ body {
   z-index: 0;
 }
 
-.modal-dialog-csc-solar-system-csc-products {
+.modal-dialog-csc-lv-electrical-panel-csc-products {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1791,7 +1791,7 @@ body {
   /* above backdrop */
 }
 
-.modal-close-csc-solar-system-csc-products {
+.modal-close-csc-lv-electrical-panel-csc-products {
   position: absolute;
   top: 10px;
   right: 12px;
@@ -2756,12 +2756,12 @@ section+section {
 /* solutions  */
 
 /* ================== SOLUTIONS ================== */
-.section-solutions-solar-system-solution {
+.section-solutions-lv-electrical-panel-solution {
   background: var(--bg-solar);
   padding: clamp(48px, 2vw, 40px) 0;
 }
 
-.solutions-head-solar-system-solution {
+.solutions-head-lv-electrical-panel-solution {
   display: grid;
   grid-template-columns: 2fr auto;
   gap: 14px;
@@ -2769,21 +2769,21 @@ section+section {
   margin-bottom: clamp(18px, 1vw, 28px);
 }
 
-.solutions-kicker-solar-system-solution {
+.solutions-kicker-lv-electrical-panel-solution {
   color: var(--teal-700-solar);
   font-weight: 800;
   letter-spacing: .4px;
   margin: 0 0 6px;
 }
 
-.solutions-title-solar-system-solution {
+.solutions-title-lv-electrical-panel-solution {
   margin: 0;
   color: var(--ink-solar);
   font-weight: 800;
   font-size: clamp(22px, 3.6vw, 34px);
 }
 
-.solutions-viewall-btn-solar-system-solution {
+.solutions-viewall-btn-lv-electrical-panel-solution {
   justify-self: end;
   padding: 10px 14px;
   font-weight: 600;
@@ -2795,33 +2795,33 @@ section+section {
   transition: background .2s ease, color .2s ease, transform .2s ease;
 }
 
-.solutions-viewall-btn-solar-system-solution:hover {
+.solutions-viewall-btn-lv-electrical-panel-solution:hover {
   background: var(--teal-700-solar);
   color: #fff;
   transform: translateY(-1px);
 }
 
 /* collapse control for the grid (keeps your class names) */
-.is-collapsed-solar-system-solution .extra-card-solar-system-solution {
+.is-collapsed-lv-electrical-panel-solution .extra-card-lv-electrical-panel-solution {
   display: none;
 }
 
 /* small spacing for the intro under the headline */
-.solutions-intro-solar-system-solution {
+.solutions-intro-lv-electrical-panel-solution {
   margin-top: 0.75rem;
   display: grid;
   gap: .75rem;
 }
 
 /* tidy bullets inside cards */
-.card-points-solar-system-solution {
+.card-points-lv-electrical-panel-solution {
   margin: .5rem 0 0 1.1rem;
   padding: 0;
   line-height: 1.5;
 }
 
 /* highlights (after the 8 points) */
-.lv-highlights-solar-system-solution {
+.lv-highlights-lv-electrical-panel-solution {
   margin-top: 2rem;
   border: 1px solid rgba(0, 0, 0, .08);
   border-radius: 12px;
@@ -2829,7 +2829,7 @@ section+section {
   background: #fff;
 }
 
-.lv-highlights-solar-system-solution h3 {
+.lv-highlights-lv-electrical-panel-solution h3 {
   margin: 0 0 .5rem 0;
 }
 
@@ -2854,19 +2854,19 @@ section+section {
 }
 
 /* Grid */
-.grid-solutions-solar-system-solution {
+.grid-solutions-lv-electrical-panel-solution {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   gap: clamp(14px, 3vw, 24px);
 }
 
 /* Show only first row by default (3 cards) */
-.grid-solutions-solar-system-solution.is-collapsed-solar-system-solution .extra-card-solar-system-solution {
+.grid-solutions-lv-electrical-panel-solution.is-collapsed-lv-electrical-panel-solution .extra-card-lv-electrical-panel-solution {
   display: none;
 }
 
 /* Card */
-.card-solar-system-solution {
+.card-lv-electrical-panel-solution {
   background: #fff;
   border: 1px solid rgba(21, 94, 117, .18);
   /* cyan-ish border, very light */
@@ -2879,13 +2879,13 @@ section+section {
   transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease;
 }
 
-.card-solar-system-solution:hover {
+.card-lv-electrical-panel-solution:hover {
   border-color: var(--teal-700-solar);
   transform: translateY(-3px);
   box-shadow: 0 16px 36px rgba(0, 0, 0, .08);
 }
 
-.card-icon-solar-system-solution {
+.card-icon-lv-electrical-panel-solution {
   width: 42px;
   height: 42px;
   border-radius: 10px;
@@ -2898,19 +2898,19 @@ section+section {
   box-shadow: 0 10px 22px rgba(15, 118, 110, .25);
 }
 
-.card-icon-solar-system-solution i {
+.card-icon-lv-electrical-panel-solution i {
   font-size: 22px;
   line-height: 1;
 }
 
-.card-title-solar-system-solution {
+.card-title-lv-electrical-panel-solution {
   margin: 0 0 6px;
   font-size: clamp(16px, 2.2vw, 18px);
   font-weight: 800;
   color: var(--ink-solar);
 }
 
-.card-text-solar-system-solution {
+.card-text-lv-electrical-panel-solution {
   margin: 0 0 12px;
   color: var(--muted-solar);
   line-height: 1.65;
@@ -2918,7 +2918,7 @@ section+section {
 }
 
 /* Link CTA pinned to bottom */
-.card-link-solar-system-solution {
+.card-link-lv-electrical-panel-solution {
   margin-top: auto;
   align-self: flex-start;
   display: inline-flex;
@@ -2933,17 +2933,17 @@ section+section {
   transition: background .2s ease, color .2s ease, transform .2s ease;
 }
 
-.card-link-solar-system-solution:hover {
+.card-link-lv-electrical-panel-solution:hover {
   background: var(--cyan-800-solar);
   color: #fff;
   transform: translateY(-1px);
 }
 
 /* Reveal directions (slow) */
-.reveal-left-solar-system-solution,
-.reveal-right-solar-system-solution,
-.reveal-top-solar-system-solution,
-.reveal-bottom-solar-system-solution {
+.reveal-left-lv-electrical-panel-solution,
+.reveal-right-lv-electrical-panel-solution,
+.reveal-top-lv-electrical-panel-solution,
+.reveal-bottom-lv-electrical-panel-solution {
   opacity: 0;
   transform: translate3d(0, 0, 0);
   transition: opacity 1.05s cubic-bezier(.2, .65, .2, 1),
@@ -2951,26 +2951,26 @@ section+section {
   will-change: opacity, transform;
 }
 
-.reveal-left-solar-system-solution {
+.reveal-left-lv-electrical-panel-solution {
   transform: translateX(-26px);
 }
 
-.reveal-right-solar-system-solution {
+.reveal-right-lv-electrical-panel-solution {
   transform: translateX(26px);
 }
 
-.reveal-top-solar-system-solution {
+.reveal-top-lv-electrical-panel-solution {
   transform: translateY(-26px);
 }
 
-.reveal-bottom-solar-system-solution {
+.reveal-bottom-lv-electrical-panel-solution {
   transform: translateY(26px);
 }
 
-.in-view-solar-system.reveal-left-solar-system-solution,
-.in-view-solar-system.reveal-right-solar-system-solution,
-.in-view-solar-system.reveal-top-solar-system-solution,
-.in-view-solar-system.reveal-bottom-solar-system-solution {
+.in-view-lv-electrical-panel.reveal-left-lv-electrical-panel-solution,
+.in-view-lv-electrical-panel.reveal-right-lv-electrical-panel-solution,
+.in-view-lv-electrical-panel.reveal-top-lv-electrical-panel-solution,
+.in-view-lv-electrical-panel.reveal-bottom-lv-electrical-panel-solution {
   opacity: 1;
   transform: none;
 }
@@ -2978,10 +2978,10 @@ section+section {
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
 
-  .reveal-left-solar-system-solution,
-  .reveal-right-solar-system-solution,
-  .reveal-top-solar-system-solution,
-  .reveal-bottom-solar-system-solution {
+  .reveal-left-lv-electrical-panel-solution,
+  .reveal-right-lv-electrical-panel-solution,
+  .reveal-top-lv-electrical-panel-solution,
+  .reveal-bottom-lv-electrical-panel-solution {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
@@ -2990,22 +2990,22 @@ section+section {
 
 /* Responsive */
 @media (max-width: 1024px) {
-  .grid-solutions-solar-system-solution {
+  .grid-solutions-lv-electrical-panel-solution {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .solutions-head-solar-system-solution {
+  .solutions-head-lv-electrical-panel-solution {
     grid-template-columns: 1fr;
     align-items: start;
   }
 
-  .solutions-viewall-btn-solar-system-solution {
+  .solutions-viewall-btn-lv-electrical-panel-solution {
     justify-self: start;
   }
 }
 
 @media (max-width: 560px) {
-  .grid-solutions-solar-system-solution {
+  .grid-solutions-lv-electrical-panel-solution {
     grid-template-columns: 1fr;
   }
 }
@@ -3113,18 +3113,18 @@ section+section {
 }
 
 /* show only 2 cards when collapsed */
-#solutions-grid-solar-system-solution.is-collapsed-solar-system-solution .card-solar-system-solution:nth-of-type(3) {
+#solutions-grid-lv-electrical-panel-solution.is-collapsed-lv-electrical-panel-solution .card-lv-electrical-panel-solution:nth-of-type(3) {
   display: none;
 }
 
 /* center the "View LV Switchboards" button */
-.solutions-viewall-btn-solar-system-solution {
+.solutions-viewall-btn-lv-electrical-panel-solution {
   justify-self: center;
   margin-top: 1.25rem;
 }
 
 /* make list items real bullets inside cards */
-.card-points-solar-system-solution {
+.card-points-lv-electrical-panel-solution {
   list-style: disc;
   padding-left: 1.3rem;
 }
