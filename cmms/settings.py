@@ -35,7 +35,7 @@ else:
     SESSION_COOKIE_SECURE = True
 
 
-ALLOWED_HOSTS = ["lv-electrical-panel.ieng.tech", ".ieng.tech"]
+ALLOWED_HOSTS = ["lv-electrical-panel.ieng.tech", ".ieng.tech",]
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
 CSRF_TRUSTED_ORIGINS = ["https://*.ieng.tech"]
@@ -175,11 +175,11 @@ DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 CONTACT_RECIPIENTS = [
     "shila@iengaust.com.au",
      "test@ieng.tech",
-     "aarti@iengaust.com.au"
+     "aarti@iengaust.com.au",
+     #"jyoti@iengaust.com.au"
 ]
-CONTACT_RECIPIENTS = ["shila@iengaust.com.au",
-     "test@ieng.tech",
-     "aarti@iengaust.com.au"]
+CONTACT_RECIPIENTS = ["shila@iengaust.com.au","test@ieng.tech","aarti@iengaust.com.au"]
+#CONTACT_RECIPIENTS = ["jyoti@iengaust.com.au"]
 
 DEMO_RECIPIENTS = CONTACT_RECIPIENTS
 

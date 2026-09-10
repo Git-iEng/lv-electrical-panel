@@ -1059,9 +1059,9 @@ def request_demo_view(request):
     country_code, dial = (country.split("|", 1) + [""])[:2]
 
     ts = timezone.now().strftime("%Y-%m-%d %H:%M:%S %Z")
-    subject = "New EngDesign Enquiry"
+    subject = "New lv-electrical-panel Enquiry"
     text_body = (
-        "A new EngDesign Enquiry request was submitted.\n\n"
+        "A new lv-electrical-panel Enquiry request was submitted.\n\n"
         f"Submitted: {ts}\n"
         f"IP: {request.META.get('REMOTE_ADDR','')}\n\n"
         f"Full name: {full_name}\n"
@@ -1075,7 +1075,7 @@ def request_demo_view(request):
     )
 
     html_body = f"""
-        <h2 style="margin:0 0 8px">New EngDesign Inquiry Request</h2>
+        <h2 style="margin:0 0 8px">New lv-electrical-panel Inquiry Request</h2>
         <p style="margin:0 0 12px;color:#334">Submitted {ts} from {request.META.get('REMOTE_ADDR','')}</p>
         <table cellpadding="6" cellspacing="0" style="border-collapse:collapse;background:#f9fbfc">
           <tr><td><b>Full name</b></td><td>{full_name}</td></tr>
@@ -1159,10 +1159,10 @@ def contact_section(request):
         # )
 
         # Email body
-        subject = "New website contact submission for EngDesign Inquiry"
+        subject = "New  contact submission for lv-electrical-panel Inquiry"
         text_body = "\n".join(
             [
-                "New contact submission for EngDesign Inquiry:",
+                "New contact submission for lv-electrical-panel Inquiry:",
                 f"Name: {cd['first_name']} {cd.get('last_name','')}".strip(),
                 f"Company: {cd.get('company','')}",
                 f"Email: {cd['email']}",
@@ -1308,10 +1308,10 @@ def contact_block_submit(request):
     # CHANGE BY JYOTI - 10-Sep-2026:
     # Updated copied Transformer wording to EngDesign for this subdomain.
     # --- Email notification ---
-    subject = f"[EngDesign Website] Consulting request: {name}"
+    subject = f"[lv-electrical-panel] Consulting request: {name}"
 
     text_body = "\n".join([
-        "A new consulting request was submitted for EngDesign:",
+        "A new consulting request was submitted for lv-electrical-panel:",
         f"Name: {name}",
         f"Email: {email}",
         f"Phone: {e164_phone or phone}",
