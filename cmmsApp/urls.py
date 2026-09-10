@@ -16,6 +16,30 @@ urlpatterns = [
     # Demo form submit (POST)
     path("request-demo/", views.request_demo_view, name="request_demo"),
 
+     # =========================================================
+    # CHANGE BY JYOTI - 10-Sep-2026
+    # EMAIL OTP VERIFICATION - START
+    # =========================================================
+
+    # Called when user clicks "Verify email"
+    path(
+        "api/contact/send-email-otp/",
+        views.send_email_otp,
+        name="send_email_otp"
+    ),
+
+    # Called when user enters OTP and clicks "Verify OTP"
+    path(
+        "api/contact/verify-email-otp/",
+        views.verify_email_otp,
+        name="verify_email_otp"
+    ),
+
+    # =========================================================
+    # CHANGE BY JYOTI - EMAIL OTP VERIFICATION - END
+    # =========================================================
+
+
     # Thanks page (use ONE route + ONE name)
     path("thanks/", views.contact_thanks, name="contact_thanks"),
 
