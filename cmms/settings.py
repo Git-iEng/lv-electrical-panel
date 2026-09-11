@@ -51,7 +51,7 @@ CSRF_TRUSTED_ORIGINS = ["https://*.ieng.tech"]
 SESSION_ENGINE = "django.contrib.sessions.backends.signed_cookies"
  
 # Use a separate session cookie for Transformer website.
-SESSION_COOKIE_NAME = "transformer_sessionid"
+SESSION_COOKIE_NAME = "engdesign_sessionid"
  
 SESSION_COOKIE_HTTPONLY = True
 SESSION_COOKIE_SAMESITE = "Lax"
